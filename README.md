@@ -6,7 +6,7 @@ Start golang environnement in a docker - install golang - IDE for golang - workd
 - exec : bash runGoDocker.sh
 
 ## Use
-When the container is ready lauch just liteide
+When the container is ready just launch liteide
 
 
 
