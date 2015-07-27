@@ -4,7 +4,7 @@ RUN apt-get update
 RUN apt-get -y install software-properties-common dbus-x11
 RUN apt-get install -y xorg xauth wget 
 RUN apt-get install -y xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic xvfb 
-RUN apt-get -y install curl git gcc make bison binutils build-essential mercurial libsdl-ttf2.0-dev  libsdl1.2-dev libsdl-mixer1.2-dev libsdl-image1.2-dev
+RUN apt-get -y install curl git gcc gdb make bison binutils build-essential mercurial libsdl-ttf2.0-dev  libsdl1.2-dev libsdl-mixer1.2-dev libsdl-image1.2-dev
 RUN apt-get -y install qt5-default libqt5webkit5-dev libqtcore4 libQtGui4 
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/developer && \

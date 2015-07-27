@@ -24,6 +24,7 @@ else
 	docker tag  ${ID_IMG_DOCKER} $TAG_REPO_DOCKER:$TAG_IMG_DOCKER
 fi
 
+docker rm -f $HWG_DOCKER
 docker run -v="/tmp/.X11-unix:/tmp/.X11-unix:rw" -ti --name $HWG_DOCKER $TAG_REPO_DOCKER:$TAG_IMG_DOCKER bash
 
 ## supprimer les images dockers non taggées
